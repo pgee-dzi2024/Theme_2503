@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84530379-9355-408c-96c0-2611aa586c9a" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp/dp/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/dp/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/XAMPP.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Инсталирне на Django.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Подготовка.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/Създаване  на проект.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/реализация.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dr/Дипломен проект.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dr/Тема_2503.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dr/Титулна страница.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +35,12 @@
     &quot;assignee&quot;: &quot;pgee-dzi2024&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/pgee-dzi2024/Theme_2503.git&quot;,
-    &quot;accountId&quot;: &quot;99a6a86b-a43c-4b11-9b66-b26f108b2a78&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/pgee-dzi2024/Theme_2503.git",
+    "accountId": "65bdae2d-4b6b-4579-a62a-30a0aa5a31af"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -44,19 +50,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/DZI_2025/Theme_2503/dr",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DZI_2025\Theme_2503\dr" />
+      <recent name="C:\DZI_2025\Theme_2503" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
