@@ -1,0 +1,7 @@
+<h1>Завършване на поръчката - Стъпка 2</h1>  
+<h3>Обща сума: {{ cart.items.all|get_total }}</h3>  
+<form method="post">  
+    {% csrf_token %}  
+    {{ form.as_p }}  
+    <button type="submit">Финализирай поръчката</button>  
+</form>  

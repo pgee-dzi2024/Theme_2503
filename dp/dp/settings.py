@@ -118,3 +118,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Активиране на сесиите
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Сесиите се съхраняват в базата данни
+
+# Срок на валидност на сесията
+# SESSION_COOKIE_AGE = 1209600  # 2 седмици (в секунди)
+SESSION_COOKIE_AGE = 1800  # 30 минути (в секунди)
+
+# Сесията ще се пази в браузъра дори ако не е записана информация
+SESSION_SAVE_EVERY_REQUEST = True
