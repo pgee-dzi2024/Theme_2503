@@ -84,7 +84,6 @@ def cart_view(request):
 def clear_cart_view(request):
     cart = get_or_create_cart(request)  # Вземаме количката
     cart.items.all().delete()  # Изтриваме всички елементи от количката
-
     messages.info(request, "Количката беше изчистена!")
     return redirect('cart')  # Пренасочваме към страницата с количката
 

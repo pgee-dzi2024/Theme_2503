@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="84530379-9355-408c-96c0-2611aa586c9a" name="Changes" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dr/~$пломен проект.docx" beforeDir="false" afterPath="$PROJECT_DIR$/dr/~$пломен проект.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dr/Дипломен проект.docx" beforeDir="false" afterPath="$PROJECT_DIR$/dr/Дипломен проект.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/~$бота с GPT4o.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744096720407</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="init">
+      <option name="closed" value="true" />
+      <created>1745306258412</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1745306258412</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
