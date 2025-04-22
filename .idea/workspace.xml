@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84530379-9355-408c-96c0-2611aa586c9a" name="Changes" comment="init" />
+    <list default="true" id="84530379-9355-408c-96c0-2611aa586c9a" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dr/~$пломен проект.docx" beforeDir="false" afterPath="$PROJECT_DIR$/dr/~$пломен проект.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dr/Дипломен проект.docx" beforeDir="false" afterPath="$PROJECT_DIR$/dr/Дипломен проект.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/work/~$бота с GPT4o.docx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +35,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/pgee-dzi2024/Theme_2503.git&quot;,
-    &quot;accountId&quot;: &quot;65bdae2d-4b6b-4579-a62a-30a0aa5a31af&quot;
+    &quot;accountId&quot;: &quot;99a6a86b-a43c-4b11-9b66-b26f108b2a78&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -51,7 +56,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/DZI_2025/Theme_2503/dp/main/static&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -66,7 +71,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
@@ -167,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744096205728</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="init">
+      <option name="closed" value="true" />
+      <created>1744096720407</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744096720407</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
