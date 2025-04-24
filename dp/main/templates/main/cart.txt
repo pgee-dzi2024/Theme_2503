@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load custom_filters %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Количка</title>
+</head>
+<body>
+    <h1>Количка</h1>
+
+    {% if items %}
+        <ul>
+            {% for item in items %}
+            <li>
+                {{ item.product.name }} - {{ item.quantity }} бр. - {{ item.product.price }} лв.
+                (Общо: {{ item.get_subtotal_formatted }} лв.)
+            </li>
+            {% endfor %}
+        </ul>
+        <hr>
+        <h3>Обща сума: {{ total }} лв.</h3>
+        <a href="{% url 'clear_cart' %}">Изчисти количката</a>
+    {% else %}
+        <p>Количката е празна.</p>
+    {% endif %}
+
+    <a href="{% url 'home' %}">Обратно към магазина</a>
+</body>
+</html>

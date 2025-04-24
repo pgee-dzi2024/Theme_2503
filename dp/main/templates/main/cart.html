@@ -1,29 +1,120 @@
 <!DOCTYPE html>
 {% load custom_filters %}
-<html lang="en">
+{% load static %}
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Количка</title>
+    <title>Моята количка</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Твоят основен стилов файл, ако има такъв -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <!-- Bootstrap Icons (по желание) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        body { background: #f8f9fa; }
+        .cart-card { max-width: 900px; margin: 40px auto; }
+        .cart-img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; }
+        .cart-total { font-size: 1.5rem; font-weight: bold; }
+        .empty-cart { padding: 60px 0; }
+    </style>
 </head>
 <body>
-    <h1>Количка</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Електронен магазин</a>
+            <div>
+                <a href="{% url 'cart' %}" class="btn btn-light">
+                    <i class="bi bi-cart"></i> Количка
+                </a>
+            </div>
+        </div>
+    </nav>
 
-    {% if items %}
-        <ul>
-            {% for item in items %}
-            <li>
-                {{ item.product.name }} - {{ item.quantity }} бр. - {{ item.product.price }} лв.
-                (Общо: {{ item.get_subtotal_formatted }} лв.)
-            </li>
-            {% endfor %}
-        </ul>
-        <hr>
-        <h3>Обща сума: {{ total }} лв.</h3>
-        <a href="{% url 'clear_cart' %}">Изчисти количката</a>
-    {% else %}
-        <p>Количката е празна.</p>
-    {% endif %}
+    <div class="container cart-card">
+        <h2 class="mb-4 text-center">Моята количка</h2>
+        {% if items %}
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <table class="table align-middle table-borderless mb-0">
+                        <thead class="border-bottom">
+                            <tr>
+                                <th>Продукт</th>
+                                <th class="text-center">Количество</th>
+                                <th class="text-end">Цена</th>
+                                <th class="text-end">Общо</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in items %}
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        {% if item.product.image %}
+                                            <img src="{{ item.product.image.url }}" alt="{{ item.product.name }}" class="cart-img me-3">
+                                        {% endif %}
+                                        <span class="fw-semibold">{{ item.product.name }}</span>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <form method="post" action="{% url 'update_cart' item.product.id %}" class="d-flex justify-content-center align-items-center">
+                                        {% csrf_token %}
+                                        <input type="number" name="quantity" value="{{ item.quantity }}" min="1" class="form-control form-control-sm me-2" style="width: 70px;">
+                                        <button type="submit" class="btn btn-outline-primary btn-sm px-2">Обнови</button>
+                                    </form>
+                                </td>
+                                <td class="text-end">
+                                    {{ item.product.price|floatformat:2 }} лв.
+                                </td>
+                                <td class="text-end">
+                                    {{ item.total_price|floatformat:2 }} лв.
+                                </td>
+                                <td class="text-end">
+                                    <form method="post" action="{% url 'remove_from_cart' item.product.id %}">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-outline-danger btn-sm px-2" title="Премахни">
+                                            <i class="bi bi-trash"></i>
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end mt-4">
+                        <div class="p-3 border bg-light rounded text-end" style="min-width:200px;">
+                            <div class="h5 mb-2">Общо:</div>
+                            <div class="cart-total">{{ total|floatformat:2 }} лв.</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <a href="{% url 'home' %}" class="btn btn-outline-secondary">
+                            <i class="bi bi-arrow-left"></i> Обратно към продуктите
+                        </a>
+                        <a href="{% url 'checkout_step_one' %}" class="btn btn-success btn-lg">
+                            <i class="bi bi-cart-check"></i> Поръчай
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="alert alert-info text-center empty-cart">
+                <h4>Вашата количка е празна.</h4>
+                <div class="mt-4">
+                    <a href="{% url 'home' %}" class="btn btn-primary btn-lg">
+                        <i class="bi bi-shop"></i> Разгледай продукти
+                    </a>
+                </div>
+            </div>
+        {% endif %}
+    </div>
 
-    <a href="{% url 'home' %}">Обратно към магазина</a>
+    <footer class="text-center text-muted py-4 mt-5">
+        &copy; 2024 Електронен магазин
+    </footer>
+
+    <!-- Bootstrap JS (по желание) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

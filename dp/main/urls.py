@@ -10,6 +10,8 @@ urlpatterns = [
     path('cart/clear/', clear_cart_view, name='clear_cart'),  # Изчистване на количката
     path('checkout/step-one/', checkout_step_one, name='checkout_step_one'),
     path('checkout/step-two/', checkout_step_two, name='checkout_step_two'),
+    path('cart/update/<int:product_id>/', update_cart, name='update_cart'),
+    path('cart/remove/<int:product_id>/', remove_from_cart, name='remove_from_cart'),
 ]
 
 if settings.DEBUG:

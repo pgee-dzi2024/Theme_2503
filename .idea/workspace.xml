@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84530379-9355-408c-96c0-2611aa586c9a" name="Changes" comment="init" />
+    <list default="true" id="84530379-9355-408c-96c0-2611aa586c9a" name="Changes" comment="всичко преди тестване">
+      <change afterPath="$PROJECT_DIR$/dp/main/templates/main/cart.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dp/main/templates/main/index.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/main/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/main/templates/main/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/dp/main/templates/main/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dp/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dp/main/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +39,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/pgee-dzi2024/Theme_2503.git&quot;,
-    &quot;accountId&quot;: &quot;99a6a86b-a43c-4b11-9b66-b26f108b2a78&quot;
+    &quot;accountId&quot;: &quot;65bdae2d-4b6b-4579-a62a-30a0aa5a31af&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -42,61 +51,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/DZI_2025/Theme_2503/dp/main/static&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/DZI_2025/Theme_2503/dp/main/templates/main",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\DZI_2025\Theme_2503\dp\main\templates\main" />
       <recent name="C:\DZI_2025\Theme_2503\dp\main\static" />
       <recent name="C:\DZI_2025\Theme_2503\dp\main" />
       <recent name="C:\DZI_2025\Theme_2503\dp\dp" />
-      <recent name="C:\DZI_2025\Theme_2503\dp\main\templates\main" />
       <recent name="C:\DZI_2025\Theme_2503\dr" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Theme_2503" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dp" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dp/manage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.manage" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -181,87 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743728255027</updated>
     </task>
-    <task id="LOCAL-00010" summary="init">
+    <task id="LOCAL-00010" summary="всичко преди тестване">
       <option name="closed" value="true" />
-      <created>1743582037525</created>
+      <created>1744093402897</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1743582037525</updated>
+      <updated>1744093402897</updated>
     </task>
-    <task id="LOCAL-00011" summary="init">
-      <option name="closed" value="true" />
-      <created>1744096205728</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1744096205728</updated>
-    </task>
-    <task id="LOCAL-00012" summary="init">
-      <option name="closed" value="true" />
-      <created>1744096720407</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1744096720407</updated>
-    </task>
-    <task id="LOCAL-00013" summary="init">
-      <option name="closed" value="true" />
-      <created>1745306258412</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1745306258412</updated>
-    </task>
-    <task id="LOCAL-00014" summary="init">
-      <option name="closed" value="true" />
-      <created>1745307539517</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1745307539517</updated>
-    </task>
-    <task id="LOCAL-00015" summary="init">
-      <option name="closed" value="true" />
-      <created>1745308168409</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1745308168409</updated>
-    </task>
-    <task id="LOCAL-00016" summary="init">
-      <option name="closed" value="true" />
-      <created>1745309100663</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1745309100663</updated>
-    </task>
-    <task id="LOCAL-00017" summary="init">
-      <option name="closed" value="true" />
-      <created>1745311267376</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1745311267376</updated>
-    </task>
-    <task id="LOCAL-00018" summary="init">
-      <option name="closed" value="true" />
-      <created>1745311273884</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1745311273884</updated>
-    </task>
-    <task id="LOCAL-00019" summary="init">
-      <option name="closed" value="true" />
-      <created>1745396793083</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1745396793083</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -276,9 +183,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
     <MESSAGE value="добавени папки dr и docs" />
     <MESSAGE value="всичко преди тестване" />
-    <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="всичко преди тестване" />
   </component>
 </project>

@@ -40,3 +40,11 @@ class NotesForm(forms.Form):
         if len(notes) > 500:
             raise forms.ValidationError("Бележките не могат да съдържат повече от 500 символа")
         return notes
+
+
+class UpdateQuantityForm(forms.Form):
+    quantity = forms.IntegerField(min_value=1, label='Количество')
+
+
+class RemoveFromCartForm(forms.Form):
+    pass  # просто за csrf защита, не изисква полета

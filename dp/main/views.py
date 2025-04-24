@@ -142,3 +142,31 @@ def checkout_step_two(request):
         form = forms.NotesForm()
 
     return render(request, 'main/checkout_step_two.html', {'form': form, 'cart': cart})
+
+
+def update_cart(request, product_id):
+    cart = models.Cart.objects.get(user=request.user)
+    product = get_object_or_404(models.Product, id=product_id)
+    item = get_object_or_404(models.CartItem, cart=cart, product=product)
+    if request.method == 'POST':
+        form = forms.UpdateQuantityForm(request.POST)
+        if form.is_valid():
+            quantity = form.cleaned_data['quantity']
+            item.quantity = quantity
+            item.save()
+            messages.success(request, f'Продуктът {item.product.name} е обновен.')
+        else:
+            messages.error(request, 'Грешка при обновяване на количеството.')
+    return redirect('cart')
+
+
+def remove_from_cart(request, product_id):
+    cart = models.Cart.objects.get(user=request.user)
+    product = get_object_or_404(models.Product, id=product_id)
+    item = get_object_or_404(models.CartItem, cart=cart, product=product)
+    if request.method == 'POST':
+        form = forms.RemoveFromCartForm(request.POST)
+        if form.is_valid():
+            item.delete()
+            messages.success(request, f'Продуктът {product.name} беше премахнат от количката.')
+    return redirect('cart')
