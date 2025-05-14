@@ -80,7 +80,7 @@ def cart_view(request):
     return render(request, 'main/cart.html', context)
 
 
-# Изчиства количката
+#
 def clear_cart_view(request):
     cart = get_or_create_cart(request)  # Вземаме количката
     cart.items.all().delete() # Изтриваме всички елементи от количката
