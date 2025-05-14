@@ -16,6 +16,7 @@ class OrderForm(forms.ModelForm):
 
         # Добавяне на метод за валидация на имейл
 
+
     def clean_email(self):
         email = self.cleaned_data.get('email')
         if not email.endswith('@example.com'):  # Примерна валидация
