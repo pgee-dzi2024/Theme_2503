@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Време на генериране: 14 май 2025 в 11:06
+-- Време на генериране: 25 май 2025 в 23:55
 -- Версия на сървъра: 10.4.32-MariaDB
 -- Версия на PHP: 8.2.12
 
@@ -27,7 +27,6 @@ SET time_zone = "+00:00";
 -- Структура на таблица `auth_group`
 --
 
-DROP TABLE IF EXISTS `auth_group`;
 CREATE TABLE `auth_group` (
   `id` int(11) NOT NULL,
   `name` varchar(150) NOT NULL
@@ -39,7 +38,6 @@ CREATE TABLE `auth_group` (
 -- Структура на таблица `auth_group_permissions`
 --
 
-DROP TABLE IF EXISTS `auth_group_permissions`;
 CREATE TABLE `auth_group_permissions` (
   `id` bigint(20) NOT NULL,
   `group_id` int(11) NOT NULL,
@@ -52,7 +50,6 @@ CREATE TABLE `auth_group_permissions` (
 -- Структура на таблица `auth_permission`
 --
 
-DROP TABLE IF EXISTS `auth_permission`;
 CREATE TABLE `auth_permission` (
   `id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -116,7 +113,6 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 -- Структура на таблица `auth_user`
 --
 
-DROP TABLE IF EXISTS `auth_user`;
 CREATE TABLE `auth_user` (
   `id` int(11) NOT NULL,
   `password` varchar(128) NOT NULL,
@@ -136,7 +132,7 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$600000$1YEcMx6JidSrk9C4q4xStP$gFZAp1U6NJfRLxdpWXKe5H6MfJ4KP0JESg660JYQtdI=', '2025-04-03 14:36:31.202246', 1, 'dzi_25', '', '', '', 1, 1, '2025-03-31 18:20:38.869975');
+(1, 'pbkdf2_sha256$600000$1YEcMx6JidSrk9C4q4xStP$gFZAp1U6NJfRLxdpWXKe5H6MfJ4KP0JESg660JYQtdI=', '2025-05-16 10:20:47.617353', 1, 'dzi_25', '', '', '', 1, 1, '2025-03-31 18:20:38.869975');
 
 -- --------------------------------------------------------
 
@@ -144,7 +140,6 @@ INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `userna
 -- Структура на таблица `auth_user_groups`
 --
 
-DROP TABLE IF EXISTS `auth_user_groups`;
 CREATE TABLE `auth_user_groups` (
   `id` bigint(20) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -157,7 +152,6 @@ CREATE TABLE `auth_user_groups` (
 -- Структура на таблица `auth_user_user_permissions`
 --
 
-DROP TABLE IF EXISTS `auth_user_user_permissions`;
 CREATE TABLE `auth_user_user_permissions` (
   `id` bigint(20) NOT NULL,
   `user_id` int(11) NOT NULL,
@@ -170,7 +164,6 @@ CREATE TABLE `auth_user_user_permissions` (
 -- Структура на таблица `django_admin_log`
 --
 
-DROP TABLE IF EXISTS `django_admin_log`;
 CREATE TABLE `django_admin_log` (
   `id` int(11) NOT NULL,
   `action_time` datetime(6) NOT NULL,
@@ -209,7 +202,6 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 -- Структура на таблица `django_content_type`
 --
 
-DROP TABLE IF EXISTS `django_content_type`;
 CREATE TABLE `django_content_type` (
   `id` int(11) NOT NULL,
   `app_label` varchar(100) NOT NULL,
@@ -239,7 +231,6 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 -- Структура на таблица `django_migrations`
 --
 
-DROP TABLE IF EXISTS `django_migrations`;
 CREATE TABLE `django_migrations` (
   `id` bigint(20) NOT NULL,
   `app` varchar(255) NOT NULL,
@@ -281,7 +272,6 @@ INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 -- Структура на таблица `django_session`
 --
 
-DROP TABLE IF EXISTS `django_session`;
 CREATE TABLE `django_session` (
   `session_key` varchar(40) NOT NULL,
   `session_data` longtext NOT NULL,
@@ -295,9 +285,11 @@ CREATE TABLE `django_session` (
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
 ('366dnp8t9hsq314iqsix6riggskmxriz', 'e30:1u839l:RCnyj3RsJHxhsnbaKhPSu3xH1pyvPxs9glA8ayde7nI', '2025-04-24 20:56:49.111301'),
 ('akf27s7uorakrszvoh3esy9yh73yoh4m', 'e30:1u7WVb:nd1SPafswFSfiM5M7rzoWDtqr4m-tOTJuba-CqM8y-4', '2025-04-23 10:05:11.723634'),
+('f39wl04hvg7j74tzspdqloq0r5h8to2w', 'e30:1uJJHh:Q_WY00RZbKB0qdNUR9mvxWbqAfDrvuI3n8hUe9dmG1I', '2025-05-25 22:23:33.155373'),
 ('izkt4h8yga0hq151dgbqv15u7qcc83rp', 'e30:1uF81z:5gxSJZBFjQCT4ib82NiJRloz_XUj8Oc-czrwyb5AaEI', '2025-05-14 09:34:03.873238'),
 ('ld19tw2hu0v6x40j1ma2f8yphr3le0ja', 'e30:1u0MXv:zfkaWQTEt91yrWA4Ad1zBKASth8_c-WFWnjYYV3vJGY', '2025-04-03 16:01:59.349204'),
 ('s8s3mx4w1xsf59msu0hbfweh2gjajdyb', 'e30:1u80no:YuGnDFowoAeCi3BoFeey3IkQ7JIWOcFjKTy1om5tT6U', '2025-04-24 18:26:00.681052'),
+('u39q6t2e9tmlc304l8mej8x6h4g4bo2b', '.eJxVj8FqwzAMhl9l-DxCYjtO2tM8ct2pDxBkW2qyJXaxUxiUvnsVKHQ76vt_fUI3McJ1m8ZrwTzOQRxFI97_Mgf-B-MehG-I51T5FLc8u2qvVM-0VF8p4PL57P4TTFAm3va6dtIRUt-oDkkCoZZtQ04ZZRxIH7TyXje9M6ioJlkfSLeuAyeNAtmxNOXAvgAbiONN0JzLNkZYke0lQNnvLvBi9jQwwRXmhSewdvjAX1gvC_IPK0eXKcW9KJVuTdczgRAylsJsOA32jQ1W3O8PCEld_g:1uFsD1:puHFDRTTxjS5ymtCqCLOZNAmDLWV4AiRaFEPNqkXMn4', '2025-05-16 10:52:31.918887'),
 ('yjjkc9nxyde7kfx3vrah3dye7o5qjggn', 'e30:1u4bqI:LjdMEPCeDY3Sy0T2cscMAD5zt5C1ZgB1CIJMCuLc-LM', '2025-04-15 09:10:30.945409');
 
 -- --------------------------------------------------------
@@ -306,7 +298,6 @@ INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALU
 -- Структура на таблица `main_cart`
 --
 
-DROP TABLE IF EXISTS `main_cart`;
 CREATE TABLE `main_cart` (
   `id` bigint(20) NOT NULL,
   `session_id` varchar(36) DEFAULT NULL,
@@ -328,7 +319,9 @@ INSERT INTO `main_cart` (`id`, `session_id`, `created_at`, `updated_at`, `user_i
 (6, 'akf27s7uorakrszvoh3esy9yh73yoh4m', '2025-04-23 09:35:11.604638', '2025-04-23 09:35:11.604638', NULL),
 (7, 's8s3mx4w1xsf59msu0hbfweh2gjajdyb', '2025-04-24 17:46:25.399189', '2025-04-24 17:46:25.399189', NULL),
 (8, '366dnp8t9hsq314iqsix6riggskmxriz', '2025-04-24 19:25:40.244447', '2025-04-24 19:25:40.244447', NULL),
-(9, 'izkt4h8yga0hq151dgbqv15u7qcc83rp', '2025-05-14 09:04:03.863236', '2025-05-14 09:04:03.863236', NULL);
+(9, 'izkt4h8yga0hq151dgbqv15u7qcc83rp', '2025-05-14 09:04:03.863236', '2025-05-14 09:04:03.863236', NULL),
+(10, 'b63cy13gdht2dk6nyg4259pyrlhznpcz', '2025-05-16 10:18:49.262094', '2025-05-16 10:18:49.262094', NULL),
+(11, 'f39wl04hvg7j74tzspdqloq0r5h8to2w', '2025-05-25 21:53:13.921919', '2025-05-25 21:53:13.921919', NULL);
 
 -- --------------------------------------------------------
 
@@ -336,7 +329,6 @@ INSERT INTO `main_cart` (`id`, `session_id`, `created_at`, `updated_at`, `user_i
 -- Структура на таблица `main_cartitem`
 --
 
-DROP TABLE IF EXISTS `main_cartitem`;
 CREATE TABLE `main_cartitem` (
   `id` bigint(20) NOT NULL,
   `quantity` int(10) UNSIGNED NOT NULL CHECK (`quantity` >= 0),
@@ -349,7 +341,7 @@ CREATE TABLE `main_cartitem` (
 --
 
 INSERT INTO `main_cartitem` (`id`, `quantity`, `cart_id`, `product_id`) VALUES
-(1, 1, 1, 11),
+(1, 2, 1, 11),
 (2, 1, 1, 3),
 (3, 1, 2, 6),
 (4, 1, 2, 10),
@@ -357,7 +349,8 @@ INSERT INTO `main_cartitem` (`id`, `quantity`, `cart_id`, `product_id`) VALUES
 (6, 3, 4, 3),
 (8, 1, 5, 2),
 (9, 1, 7, 12),
-(10, 1, 8, 2);
+(10, 1, 8, 2),
+(11, 1, 10, 2);
 
 -- --------------------------------------------------------
 
@@ -365,7 +358,6 @@ INSERT INTO `main_cartitem` (`id`, `quantity`, `cart_id`, `product_id`) VALUES
 -- Структура на таблица `main_order`
 --
 
-DROP TABLE IF EXISTS `main_order`;
 CREATE TABLE `main_order` (
   `id` bigint(20) NOT NULL,
   `created_at` datetime(6) NOT NULL,
@@ -385,7 +377,6 @@ CREATE TABLE `main_order` (
 -- Структура на таблица `main_orderitem`
 --
 
-DROP TABLE IF EXISTS `main_orderitem`;
 CREATE TABLE `main_orderitem` (
   `id` bigint(20) NOT NULL,
   `quantity` int(10) UNSIGNED NOT NULL CHECK (`quantity` >= 0),
@@ -399,7 +390,6 @@ CREATE TABLE `main_orderitem` (
 -- Структура на таблица `main_product`
 --
 
-DROP TABLE IF EXISTS `main_product`;
 CREATE TABLE `main_product` (
   `id` bigint(20) NOT NULL,
   `name` varchar(40) NOT NULL,
@@ -602,13 +592,13 @@ ALTER TABLE `django_migrations`
 -- AUTO_INCREMENT for table `main_cart`
 --
 ALTER TABLE `main_cart`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `main_cartitem`
 --
 ALTER TABLE `main_cartitem`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `main_order`
